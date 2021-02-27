@@ -16,7 +16,7 @@ pkg] test --coverage YourPackage      # run the tests and output up-to-date cove
 
 this should generate a lot of `.cov` files scattered around your normal source files.
 
-### Use `coverstat.jl` to get testing statistics
+### 2. Use `coverstat.jl` to get testing statistics
 ```
 $ coverstat.jl src/
        7      75      68  90.67% (TOTAL)
@@ -29,7 +29,7 @@ $ coverstat.jl src/
 ```
 (The columns are in fact colored, it looks much better in the commandline. The first column is "untested lines", then "total lines", "tested lines", "percent coverage" and file/subdirectory name.)
 
-### Use `cover.jl` to find untested lines
+### 3. Use `cover.jl` to find untested lines
 If you find a problematic file, you can use `cover.jl` to find the lines that need testing:
 ```
 $ cover.jl src/readinput.jl
