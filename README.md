@@ -34,7 +34,7 @@ If you find a problematic file, you can use `cover.jl` to find the lines that ne
 ```
 $ cover.jl src/readinput.jl
 -
--      const X = Y            # untested line
+-      const X = Y
 - 
 1      testedFunctionCall()
 0 ***  untestedFunctionCall()
